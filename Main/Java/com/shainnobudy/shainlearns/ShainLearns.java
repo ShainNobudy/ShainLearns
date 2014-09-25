@@ -33,7 +33,7 @@ public class ShainLearns
    {
        ConfigurationHandler.init(event.getSuggestedConfigurationFile());
        FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
-       LogHelper.info("Banana chockolate Tart!!!");
+       LogHelper.info("Pre Initialization Complete!");
 
        ModItems.init();
    }
@@ -42,14 +42,14 @@ public class ShainLearns
 
    public void Init(FMLInitializationEvent event)
    {
-       LogHelper.info("Banana chockolate pie!!!!");
+       LogHelper.info("Initialization Complete!");
    }
 
    @Mod.EventHandler
 
    public void postInit(FMLPostInitializationEvent event)
    {
-       LogHelper.info("Banana chockolate cake!!!");
+       LogHelper.info("Post Initialization Complete!!");
    }
 
 
